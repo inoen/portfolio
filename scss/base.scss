@@ -1,0 +1,42 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "./parts/button";
+@import "./anime/anime";
+
+html{
+    font-family: 'Noto Sans JP', sans-serif
+}
+
+
+@mixin padding($top-bottom:100px, $right-left:20%) {
+    padding: $top-bottom $right-left;    
+}
+
+
+.header_responsive-padding{
+@include padding(150px,20%);
+
+@media (max-width: 1280px) {
+    padding: 120px 10%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 5%;
+  }
+}
+
+.section_responsive-padding{
+    @include padding;
+    
+    @media (max-width: 1280px) {
+        padding: 80px 10%;
+      }
+    
+      @media (max-width: 768px) {
+        padding: 80px 5%;
+      }
+    }
+
+.header{
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+
+}
