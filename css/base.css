@@ -336,3 +336,14 @@ html {
 
 .header {
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); }
+
+i.fab {
+  font-size: 3rem; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.max-width-middle {
+  max-width: 400px; }
