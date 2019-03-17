@@ -11,27 +11,59 @@
     <link rel="stylesheet" href="css/base.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/jquery.inview.min.js"></script>
+    <script src="js/common.js"></script>
     <title>Portfolio</title>
 </head>
 
-<body>
-    <header class="header header_responsive-padding fadein">
-        <h1>Web Pageつくります</h1>
-        <p>気軽にメール、リプライください。</p>
-    </header>
-    <section class="section_responsive-padding flex fadein">
+<body id="1">
+    <div class="relative">
+        <nav>
+            <input type="checkbox" id="newmenu">
+            <label for="newmenu" class="new-menu"></label>
+            <label for="newmenu" class="menu_bg"></label>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <ul class="navi">
+                <li><a href="#1"><span class="navi_jp">TOP</span><span class="navi_en">トップページ</span></a>
+                </li>
+                <li><a href="#2"><span class="navi_jp">Profile</span><span class="navi_en">自分について</span></a></li>
+                <li><a href="#3"><span class="navi_jp">Skills</span><span class="navi_en">使用技術</span></a>
+                </li>
+                <li><a href="#4" aria-current="page"><span class="navi_jp">Service</span><span
+                            class="navi_en">対応可能案件</span></a></li>
+                <li><a href="#5"><span class="navi_jp">Works</span><span class="navi_en">過去案件</span></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header header_responsive-padding">
+            <h1>Webページつくります。</h1>
+            <p>気軽にご連絡、メール、リプライください。</p>
+            <section class="cd-intro">
+                <div class="cd-headline type">
+                    <span>My favourite food is</span>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">pizza</b>
+                        <b>sushi</b>
+                        <b>steak</b>
+                    </span>
+                </div>
+            </section> <!-- cd-intro -->
+        </header>
+    </div>
+    <section id="2" class="section_responsive-padding flex fadein">
         <div class="left"><img src="./img/prof.jpg" alt="イノウエのプロフィール画像"></div>
         <div class="max-width-middle">
-            <h2>プロフィール</h2>
+            <h2><span class="prime-color">P</span>rofile</h2>
             <ul>
-                <li>イノウエ</li>
+                <li>名前：いの</li>
                 <li>2016年～：Web制作会社リモート勤務</li>
                 <li>日本中国地方在住</li>
             </ul>
         </div>
     </section>
-    <section class="section_responsive-padding skill-sec fadein">
-        <h2>スキル紹介</h2>
+    <section id="3" class="section_responsive-padding skill-sec fadein">
+        <h2><span class="prime-color">S</span>kills</h2>
         <p class="flex"><i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js"></i>
@@ -40,10 +72,40 @@
             <i class="fab fa-npm"></i></p>
     </section>
     <section class="section_responsive-padding fadein">
-        <h2>プロフィール</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid sunt, exercitationem maxime
-            dolores amet ipsam quod cum vel nesciunt ullam molestiae, possimus fugiat similique, voluptates aperiam
-            expedita architecto quaerat.</p>
+        <h2><span class="prime-color">S</span>ervice</h2>
+        <div class="flex">
+            <div class="section-block-semi">
+                <div class="text-center"><img src="./img/tablet.png" alt="" width="30" height=""></div>
+
+                <h3 class="text-center">LP制作</h3>
+                <ul>
+                    <li>30,000円</li>
+                    <li>納期目安 3週間以内</li>
+                    <li>デザイン / コーディング込み</li>
+                    <li>レスポンシブ対応</li>
+                    <li>Googleアナリティクス設定</li>
+                </ul>
+            </div>
+            <div class="section-block-semi">
+                <div class="text-center"><img src="./img/notepc.png" alt="" width="30" height=""></div>
+
+                <h3 class="text-center">Webサイト制作</h3>
+                <ul class="font-detailed">
+                    <li>10,000円</li>
+                    <li>納期目安 3週間以内</li>
+                    <li>デザイン / コーディング込み</li>
+                    <li>レスポンシブ対応</li>
+                    <li>Googleアナリティクス設定</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <div class="text-center"><img src="./img/notepc.png" alt="" width="30" height=""></div>
+
+                <h3 class="text-center">画像加工</h3>
+                <p>Photoshopを使用しているため、Photoshopデータのやり取りが可能です。写真などの加工もご相談ください。デザインデータそのまま送っていただくだけでコーディング可能です。 </p>
+            </div>
+        </div>
     </section>
     <script>
         $(function () {
